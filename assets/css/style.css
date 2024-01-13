@@ -629,8 +629,8 @@ footer ul li a {
 }
 
 .crancy-chart_ptask {
-    min-height: 200px;
-    max-width: 270px;
+    min-height: 180px;
+    max-width: 220px;
     max-height: 270px;
     width: 100%;
 }
@@ -655,6 +655,11 @@ footer ul li a {
 }
 .bg-light-grey3 {
     background: #E9F5FF7D;
+}
+
+
+.big-chart-img {
+    width: 200px;
 }
 
 
