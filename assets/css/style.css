@@ -438,11 +438,17 @@ footer ul li a {
     font-size: 24px;
     color: #fff;
 }
+.light .main-top-heading {
+    color: #000;
+}
 .main-wrapper {
     border-radius: 10px;
     background-color: #27293D;
     padding: 5px 15px;
     padding-bottom: 25px;
+}
+.light .main-wrapper {
+    background-color: #F4F7F9;
 }
 .nav-sections {
     width: 100%;
