@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/package css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/package css/font-awesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/package css/charts.min.css">
+    <link rel="stylesheet" href="assets/css/package css/datatables.min.css">
+    <link rel="stylesheet" href="assets/css/package css/jvector-map.css">
+    <link rel="stylesheet" href="assets/css/package css/fancy-box.min.css">
+    <link rel="stylesheet" href="assets/css/package css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/package css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/package css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <aside>
+        <div class="modeToggle">
+            <p>Dark</p>
+            <div class="modeSwitch">
+                <input type="checkbox" name="modeInp" id="modeInp">
+                <label for="modeInp"></label>
+            </div>
+        </div>
+        <ul>
+            <li class="active">
+                <a href="#">
+                    <img src="assets/images/Home-active.svg" alt="">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/chat.svg" alt="">
+                    <span>Chat SEOAI</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/Edit.svg" alt="">
+                    <span>SuperWriter SEOAI</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/Wallet.svg" alt="">
+                    <span>Super Price</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/login.svg" alt="">
+                    <span>Login</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/Add User.svg" alt="">
+                    <span>Register</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <main>
+        <div class="container">
+            <div class="mainTopWrap">
+                <div class="mainHeading">
+                    <img src="assets/images/flash.svg" alt="">
+                    <span>SEO<span>AI</span></span>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-12 mg-top-30">
+                    <nav class="nav-sections">
+                        <ul class="menu">
+                            <li class="menu-item"><a class="menu-item-link" href="#Overview">
+                                    <img src="assets/images//extra images/img/time2.svg" alt="" />
+                                    Real Time
+                                </a></li>
+                            <li class="menu-item"><a class="menu-item-link active" href="#Overview">
+                                    <img src="assets/images/extra images/img/overview-icon.svg" alt="" />
+                                    Overview
+                                </a></li>
+                            <li class="menu-item"><a class="menu-item-link" href="#SEO">
+                                    <img src="assets/images/extra images/img/customer-behavior.svg" alt="" />
+                                    Behavior</a></li>
+                            <li class="menu-item"><a class="menu-item-link" href="#Performance">
+                                    <img src="assets/images/extra images/img/mergers-and-acquisition-law.svg" alt="" />
+                                    Acquisitions</a></li>
+                            <li class="menu-item"><a class="menu-item-link" href="#Security">
+                                    <img src="assets/images/extra images/img/layers2.svg" alt="" />
+                                    Geo graphics</a></li>
+                            <li class="menu-item"><a class="menu-item-link" href="#Miscellaneous">
+                                    <img src="assets/images/extra images/img/touch.svg" alt="" />
+                                    Technology</a></li>
+                            <li class="menu-item"><a class="menu-item-link" href="#Miscellaneous">
+                                    <img src="assets/images/extra images/img/event2.svg" alt="" />
+                                    Events</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Charts Three -->
+                    <div class="charts-main  mg-top-30">
+
+                        <div class="charts-main__three">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active " id="m_history" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <div class="crancy-chart__inside crancy-chart__three">
+                                        <canvas id="myChart_three"></canvas>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="m_history" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <div class="crancy-chart__inside crancy-chart__three">
+                                        <canvas id="myChart_three"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Charts Three -->
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Charts One -->
+                    <div class="charts-main charts-home-four mg-top-30">
+                        <!-- Top Heading -->
+                        <div class="charts-main__heading  mg-btm-20">
+                            <h4 class="charts-main__title">Visitors By Country</h4>
+                            <!-- Chart Dropdown Menu -->
+                            <div class="crancy-chart__dropdown">
+                                <ul class="nav nav-tabs crancy-dropdown__list" id="nav-tab" role="tablist">
+                                    <li class="nav-item dropdown">
+                                        <a class="crancy-sidebar_btn border rounded-3 px-3 py-2 crancy-heading__tabs nav-link dropdown-toggle bg-blue-light2"
+                                            data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Top
+                                            Country <span class="crancy-sidebar__arrow--icon">
+                                                <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.7508 0.247421C11.6711 0.169022 11.5763 0.106794 11.4719 0.0643287C11.3674 0.0218632 11.2554 0 11.1423 0C11.0291 0 10.9171 0.0218632 10.8127 0.0643287C10.7082 0.106794 10.6134 0.169022 10.5338 0.247421L6.6085 4.07837C6.52883 4.15677 6.43404 4.219 6.3296 4.26146C6.22516 4.30393 6.11314 4.32579 6 4.32579C5.88686 4.32579 5.77484 4.30393 5.6704 4.26146C5.56596 4.219 5.47117 4.15677 5.3915 4.07837L1.46623 0.247421C1.38655 0.169022 1.29176 0.106794 1.18732 0.0643287C1.08289 0.0218632 0.970865 0 0.857725 0C0.744585 0 0.632564 0.0218632 0.528125 0.0643287C0.423686 0.106794 0.328896 0.169022 0.249222 0.247421C0.0895969 0.404141 0 0.616141 0 0.837119C0 1.0581 0.0895969 1.2701 0.249222 1.42682L4.18306 5.26613C4.66515 5.73605 5.31865 6 6 6C6.68135 6 7.33485 5.73605 7.81694 5.26613L11.7508 1.42682C11.9104 1.2701 12 1.0581 12 0.837119C12 0.616141 11.9104 0.404141 11.7508 0.247421Z" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu crancy-sidebar_dropdown">
+                                            <a class="list-group-item" data-bs-toggle="list"
+                                                data-bs-target="#crancy-chart__country" role="tab">Last 15 Days</a>
+                                            <a class="list-group-item" data-bs-toggle="list"
+                                                data-bs-target="#crancy-chart__country" role="tab">Last 7 Days</a>
+                                            <a class="list-group-item" data-bs-toggle="list"
+                                                data-bs-target="#crancy-chart__country" role="tab">Last Month</a>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Chart Dropdown Menu -->
+                        </div>
+                        <div class="charts-main__one">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="crancy-chart__country" role="tabpanel"
+                                    aria-labelledby="crancy-chart__country">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="crancy-vector-map">
+                                                <div id="crancy-map"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="assets/images/extra images/img/us-flag.png" alt="" />
+                                                <div class="ms-3 flex-fill">
+                                                    <div class="d-flex nft-h7">
+                                                        United States
+                                                        <span class="color-grey nft-h8 ms-auto">120 Visiotrs</span>
+                                                    </div>
+                                                    <div class="progress crancy-progressbar__single ">
+                                                        <div class="progress-bar crancy-progressbar__bar bg-green"
+                                                            role="progressbar" style="width: 78%" aria-valuenow="78"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="assets/images/extra images/img/france-flag.png" alt="" />
+                                                <div class="ms-3 flex-fill">
+                                                    <div class="d-flex nft-h7">
+                                                        France
+                                                        <span class="color-grey nft-h8 ms-auto">120 Visiotrs</span>
+                                                    </div>
+                                                    <div class="progress crancy-progressbar__single ">
+                                                        <div class="progress-bar crancy-progressbar__bar bg-red"
+                                                            role="progressbar" style="width: 78%" aria-valuenow="78"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="assets/images/extra images/img/germany-flag.png" alt="" />
+                                                <div class="ms-3 flex-fill">
+                                                    <div class="d-flex nft-h7">
+                                                        Germany
+                                                        <span class="color-grey nft-h8 ms-auto">120 Visiotrs</span>
+                                                    </div>
+                                                    <div class="progress crancy-progressbar__single ">
+                                                        <div class="progress-bar crancy-progressbar__bar bg-blue"
+                                                            role="progressbar" style="width:60%" aria-valuenow="60"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="assets/images/extra images/img/indonesia-flag.png" alt="" />
+                                                <div class="ms-3 flex-fill">
+                                                    <div class="d-flex nft-h7">
+                                                        Indonashia
+                                                        <span class="color-grey nft-h8 ms-auto">120 Visiotrs</span>
+                                                    </div>
+                                                    <div class="progress crancy-progressbar__single ">
+                                                        <div class="progress-bar crancy-progressbar__bar bg-info"
+                                                            role="progressbar" style="width: 50%" aria-valuenow="50"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="assets/images/extra images/img/russia-flag.png" alt="" />
+                                                <div class="ms-3 flex-fill">
+                                                    <div class="d-flex nft-h7">
+                                                        Russia
+                                                        <span class="color-grey nft-h8 ms-auto">120 Visiotrs</span>
+                                                    </div>
+                                                    <div class="progress crancy-progressbar__single ">
+                                                        <div class="progress-bar crancy-progressbar__bar bg-pink"
+                                                            role="progressbar" style="width: 78%" aria-valuenow="78"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Charts One -->
+                    <div class="charts-main charts-home-four mg-top-30">
+                        <div class="charts-main__heading  mg-btm-20">
+                            <h4 class="charts-main__title">Visitors By Operating System</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="crancy-task__chart crancy-chart__inside crancy-chart_ptask">
+                                    <canvas id="myChart_task_One"></canvas>
+                                    <div class="myChart-progress">
+                                        <h4 class="myChart-progress__number fw-bold">5,900</h4>
+                                        <p class="myChart-progress__text text-dark">Total Visitors</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ms-auto">
+                                <div class="mb-3">
+                                    <div class="d-flex mb-2">
+                                        Window
+                                        <span class="ms-auto">120</span>
+                                    </div>
+                                    <div class="progress crancy-progressbar__single ">
+                                        <div class="progress-bar crancy-progressbar__bar bg-blue" role="progressbar"
+                                            style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex mb-2">
+                                        Android
+                                        <span class="ms-auto">120</span>
+                                    </div>
+                                    <div class="progress crancy-progressbar__single ">
+                                        <div class="progress-bar crancy-progressbar__bar bg-red" role="progressbar"
+                                            style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex mb-2">
+                                        IOS
+                                        <span class="ms-auto">120</span>
+                                    </div>
+                                    <div class="progress crancy-progressbar__single ">
+                                        <div class="progress-bar crancy-progressbar__bar bg-green" role="progressbar"
+                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex mb-2">
+                                        linux
+                                        <span class="ms-auto">120</span>
+                                    </div>
+                                    <div class="progress crancy-progressbar__single ">
+                                        <div class="progress-bar crancy-progressbar__bar bg-info" role="progressbar"
+                                            style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="charts-main  mg-top-30 p-0">
+                        <div class="charts-main__heading px-4 py-3">
+                            <div>
+                                <h4 class="charts-main__title">Visitors by Browsers</h4>
+                            </div>
+                        </div>
+                        <div class="bg-light-grey3 px-4 py-2 d-flex">
+                            <p>Browsers</p>
+                            <p class="ms-auto">Page Views</p>
+                        </div>
+                        <div class="px-4 py-3">
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/g.svg" class="me-2" />
+                                        Google Chrome
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient3" role="progressbar"
+                                        style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/f.svg" class="me-2" />
+                                        FieFox
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient3" role="progressbar"
+                                        style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/e.svg" class="me-2" />
+                                        Edge
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient3" role="progressbar"
+                                        style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/o.svg" class="me-2" />
+                                        Opera
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient3" role="progressbar"
+                                        style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="charts-main  mg-top-30 p-0">
+                        <div class="charts-main__heading px-4 py-3">
+                            <div>
+                                <h4 class="charts-main__title">Pages</h4>
+                            </div>
+                        </div>
+                        <div class="bg-light-grey3 px-4 py-2 d-flex">
+                            <p>Url</p>
+                            <p class="ms-auto">Page Views</p>
+                        </div>
+                        <div class="px-4 py-3">
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    Survice-colis/suivi-cols-amazon
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient1" role="progressbar"
+                                        style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    Survice-colis/suivi-cols-amazon
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient1" role="progressbar"
+                                        style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    Survice-colis/suivi-cols-amazon
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient1" role="progressbar"
+                                        style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    Survice-colis/suivi-cols-amazon
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient1" role="progressbar"
+                                        style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    Survice-colis/suivi-cols-amazon
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient1" role="progressbar"
+                                        style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light-grey3 px-4 py-2 text-center">
+                            <a href="" class="color-grey">View All</a>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="charts-main  mg-top-30 p-0">
+                        <div class="charts-main__heading px-4 py-3">
+                            <div>
+                                <h4 class="charts-main__title">Refers</h4>
+                            </div>
+                        </div>
+                        <div class="bg-light-grey3 px-4 py-2 d-flex">
+                            <p>Website</p>
+                            <p class="ms-auto">Page Views</p>
+                        </div>
+                        <div class="px-4 py-3">
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/g.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/g.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/b.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/b.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/g.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/g.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/b.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/g.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/b.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex mb-2">
+                                    <span class="d-flex">
+                                        <img src="assets/images/extra images/img/b.svg" class="me-2" />
+                                        www.google.com
+                                    </span>
+                                    <span class="ms-auto">120</span>
+                                </div>
+                                <div class="progress crancy-progressbar__single ">
+                                    <div class="progress-bar crancy-progressbar__bar bg-gradient2" role="progressbar"
+                                        style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light-grey3 px-4 py-2 text-center">
+                            <a href="" class="color-grey">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Affiliates</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">API</a>
+                </li>
+                <li>
+                    <a href="#">Status</a>
+                </li>
+                <li>
+                    <a href="#">Free Tools</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="assets/js/package js/jquery.min.js"></script>
+    <script src="assets/js/package js/jquery-migrate.js"></script>
+    <script src="assets/js/package js/popper.min.js"></script>
+    <script src="assets/js/package js/bootstrap.min.js"></script>
+    <script src="assets/js/package js/charts.js"></script>
+    <script src="assets/js/package js/final-countdown.min.js"></script>
+    <script src="assets/js/package js/fancy-box.min.js"></script>
+    <script src="assets/js/package js/fullcalendar.min.js"></script>
+    <script src="assets/js/package js/datatables.min.js"></script>
+    <script src="assets/js/package js/circle-progress.min.js"></script>
+    <script src="assets/js/package js/jquery-jvectormap.js"></script>
+    <script src="assets/js/package js/jvector-map.js"></script>
+    <script src="assets/js/package js/nice-select.min.js"></script>
+    <script src="assets/js/package js/pikaday.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        const isLight = JSON.parse(localStorage.getItem("isLight"))
+        const sidebar = document.querySelector("aside")
+        const modeSwitch = document.querySelector(".modeSwitch input")
+        const modeText = document.querySelector(".modeToggle p")
+
+        const body = document.querySelector("body")
+        const main = document.querySelector("main")
+
+
+        if (isLight) {
+            modeSwitch.checked = true
+            body.style = `background-color: #ECECEF`
+            modeText.classList.add("light")
+            modeText.innerText = "Light"
+            main.classList.add("light")
+            sidebar.classList.add("light")
+        } else {
+            body.style = `background-color: #1E1E2F`
+            modeText.classList.remove("light")
+            modeText.innerText = "Dark"
+            main.classList.remove("light")
+            sidebar.classList.remove("light")
+            modeSwitch.checked = false
+        }
+
+
+        modeSwitch.addEventListener("change", e => {
+            localStorage.setItem("isLight", JSON.stringify(modeSwitch.checked))
+            if (modeSwitch.checked) {
+                body.style = `background-color: #ECECEF`
+                modeText.classList.add("light")
+                modeText.innerText = "Light"
+                main.classList.add("light")
+                sidebar.classList.add("light")
+            } else {
+                body.style = `background-color: #1E1E2F`
+                modeText.classList.remove("light")
+                modeText.innerText = "Dark"
+                main.classList.remove("light")
+                sidebar.classList.remove("light")
+            }
+        })
+
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#crancy-table__main').DataTable({
+                searching: true, // Enable search functionality
+                info: true,
+                lengthChange: true, // Enable the ability to change the number of records per page
+                pageLength: 4,
+                lengthMenu: [
+                    [4, 10, 25, 50, -1],
+                    [4, 10, 25, 50, 'All'],
+                ],
+                language: {
+                    paginate: {
+                        next: '<i class="fas fa-angle-right"></i>',
+                        previous: '<i class="fas fa-angle-left"></i>'
+                    },
+                    lengthMenu: 'Show result: _MENU_ ' // Customize the "Show entries" text
+                },
+                dom: 'rt<"crancy-table-bottom"flp><"clear">' // Set the desired layout for the table
+            });
+
+
+            $('#crancy-map').vectorMap({
+                map: 'world_mill_en',
+                backgroundColor: 'transparent',
+                panControl: false,
+                zoomControl: false,
+                regionStyle: {
+                    initial: {
+                        fill: '#DDEDFF'
+                    },
+                    hover: {
+                        fill: '#0A82FD'
+                    }
+                },
+                showTooltip: true,
+
+            });
+        });
+    </script>
+    
+
+    
+    <script>
+
+
+        // Chart Three
+        const ctx_market = document.getElementById('myChart_three').getContext('2d');
+        const gradientBgs = ctx_market.createLinearGradient(400, 100, 100, 400);
+
+        gradientBgs.addColorStop(0, 'rgba(10, 130, 253, 0.0)');
+        gradientBgs.addColorStop(1, 'rgba(10, 130, 253, 0)');
+
+        const myChart_three = new Chart(ctx_market, {
+            type: 'line',
+
+            data: {
+                labels: ['00.00', '02.00', '06.00', '08.00', '10.00', '12.00', '14.00', '16.00', '18.00', '20.00', '22.00'],
+                datasets: [{
+                    label: 'Visitors',
+                    data: [-25, 75, 30, -5, 30, 50, -10, 55, -10, -45, 20, -30, 40, 50, 70],
+                    backgroundColor: 'transparent',
+                    borderColor: '#FF6D6F',
+                    borderWidth: 4,
+                    fill: false,
+                    fillColor: '#fff',
+                    tension: 0.4,
+                    pointRadius: 6,
+                },
+                {
+                    label: 'Page Views',
+                    data: [10, 20, 40, 30, 20, 25, 10, -25, 10, 45, -10, 50, 40, 30, 60],
+                    backgroundColor: gradientBgs,
+                    borderColor: '#0080EF',
+                    borderWidth: 4,
+                    fill: false,
+                    tension: 0.4,
+                    fillColor: '#000',
+                    fill: 'start',
+                    pointRadius: 6,
+                }]
+            },
+
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    x: {
+                        ticks: {
+                            color: '#9AA2B1',
+                        },
+                        grid: {
+                            drawBorder: false,
+                            color: '#E4F2FF',
+                            lineWidth: 2,
+                        },
+                        suggestedMax: 100,
+                        suggestedMin: 100,
+                    },
+                    y: {
+                        grid: {
+                            drawBorder: false,
+                            color: '#E4F2FF',
+                            lineWidth: 2,
+                        },
+                        suggestedMax: 100, suggestedMin: 100,
+                        ticks: {
+                            color: '#9AA2B1',
+                            callback: function (value, index, values) {
+                                return value + '%';
+                            }
+                        }
+                    },
+                },
+                plugins: {
+                    tooltip: {
+                        enabled: true,
+                        padding: 10,
+                        displayColors: true,
+                        yAlign: 'bottom',
+                        backgroundColor: '#0080EF',
+                        titleColor: '#fff',
+                        titleFont: { weight: 'normal' },
+                        bodyColor: '#fff',
+                        cornerRadius: 12,
+                        boxPadding: 3,
+                        usePointStyle: true,
+                        borderWidth: 0,
+                        font: {
+                            size: 14
+                        },
+                        caretSize: 9,
+                        bodySpacing: 200,
+                    },
+                    legend: {
+                        position: 'top',
+                        display: false,
+                    },
+                    title: {
+                        display: false,
+                        text: 'Sell History'
+                    }
+                }
+            }
+        });
+
+
+        const ctx_side_two = document.getElementById('myChart_task_One').getContext('2d');
+        const myChart_task_One = new Chart(ctx_side_two, {
+            type: 'doughnut',
+
+            data: {
+                labels: [
+                    'Audio',
+                    'Total Visitors',
+                ],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [22, 78, 30, 40],
+                    backgroundColor: [
+                        '#00C2FF',
+                        '#0080EF',
+                        '#4BCC83',
+                        '#FF6D6F',
+                    ],
+                    hoverOffset: 2,
+                    borderWidth: 0,
+                }]
+            },
+
+            options: {
+
+                responsive: true,
+                cutout: 100,
+                borderRadius: 0,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        display: false,
+                    },
+                    title: {
+                        display: false,
+                        text: 'Sell History'
+                    }
+                }
+            }
+
+        });
+
+        // Chart Nine
+        const ctx_nine = document.getElementById('myChart_nine').getContext('2d');
+        const gradientBgNine = ctx_nine.createLinearGradient(0, 0, 0, 150);
+        gradientBgNine.addColorStop(0, 'rgba(89, 190, 89, 0.40)');
+        gradientBgNine.addColorStop(0.5, 'rgba(89, 190, 89, 0.00)');
+
+        const myChart_nine = new Chart(ctx_nine, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6', '7'],
+                datasets: [{
+                    label: 'Total Click',
+                    data: [0, 10, 20, 5, 30, 10, 40,],
+                    backgroundColor: gradientBgNine,
+                    borderColor: '#4BCC83',
+                    pointRadius: 0,
+                    tension: 0.1,
+                    borderWidth: 2,
+                    fill: true,
+                    fillColor: '#fff',
+                }]
+            },
+
+            options: {
+                layout: {
+                    padding: {
+                        bottom: -20,
+                        left: -20,
+                    }
+                },
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    x: {
+                        grid: {
+                            display: false,
+                            drawBorder: false,
+                        },
+                        ticks: {
+                            display: false
+                        },
+                        suggestedMax: 4, suggestedMin: 30,
+
+                    },
+
+                    y: {
+                        grid: {
+                            display: false,
+                            drawBorder: false,
+                        },
+                        ticks: {
+                            display: false
+                        },
+                        suggestedMax: 4, suggestedMin: 10,
+                    },
+                },
+
+                plugins: {
+                    tooltip: {
+                        padding: 10,
+                        displayColors: true,
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#000',
+                        titleFont: { weight: 'normal' },
+                        bodyColor: '#2F3032',
+                        cornerRadius: 12,
+                        boxPadding: 3,
+                        usePointStyle: true,
+                        borderWidth: 0,
+                        font: {
+                            size: 14
+                        },
+                        caretSize: 9,
+                        bodySpacing: 100,
+                    },
+                    legend: {
+                        position: 'bottom',
+                        display: false,
+                    },
+                    title: {
+                        display: false,
+                        text: 'Visitor: 2k'
+                    }
+                }
+            }
+        });
+
+        // Chart Ten
+        const ctx_ten = document.getElementById('myChart_ten').getContext('2d');
+        const gradientBgten = ctx_ten.createLinearGradient(0, 0, 0, 150);
+        gradientBgten.addColorStop(0, 'rgba(89, 190, 89, 0.40)');
+        gradientBgten.addColorStop(0.5, 'rgba(89, 190, 89, 0.00)');
+
+        const myChart_ten = new Chart(ctx_ten, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6', '7'],
+                datasets: [{
+                    label: 'Total Click',
+                    data: [0, 10, 20, 5, 30, 10, 40,],
+                    backgroundColor: gradientBgNine,
+                    borderColor: '#FF6D6F',
+                    pointRadius: 0,
+                    tension: 0.1,
+                    borderWidth: 2,
+                    fill: false,
+                    fillColor: '#fff',
+                }]
+            },
+
+            options: {
+                layout: {
+                    padding: {
+                        bottom: -20,
+                        left: -20,
+                    }
+                },
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    x: {
+                        grid: {
+                            display: false,
+                            drawBorder: false,
+                        },
+                        ticks: {
+                            display: false
+                        },
+                        suggestedMax: 4, suggestedMin: 30,
+
+                    },
+
+                    y: {
+                        grid: {
+                            display: false,
+                            drawBorder: false,
+                        },
+                        ticks: {
+                            display: false
+                        },
+                        suggestedMax: 4, suggestedMin: 10,
+                    },
+                },
+
+                plugins: {
+                    tooltip: {
+                        padding: 10,
+                        displayColors: true,
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#000',
+                        titleFont: { weight: 'normal' },
+                        bodyColor: '#2F3032',
+                        cornerRadius: 12,
+                        boxPadding: 3,
+                        usePointStyle: true,
+                        borderWidth: 0,
+                        font: {
+                            size: 14
+                        },
+                        caretSize: 9,
+                        bodySpacing: 100,
+                    },
+                    legend: {
+                        position: 'bottom',
+                        display: false,
+                    },
+                    title: {
+                        display: false,
+                        text: 'Visitor: 2k'
+                    }
+                }
+            }
+        });
+
+        // Chart eleven
+        const ctx_eleven = document.getElementById('myChart_eleven').getContext('2d');
+        const gradientBgeleven = ctx_eleven.createLinearGradient(0, 0, 0, 150);
+        gradientBgeleven.addColorStop(0, 'rgba(227, 40, 175, 0.40)');
+        gradientBgeleven.addColorStop(0.5, 'rgba(227, 40, 175, 0.00)');
+
+        const myChart_eleven = new Chart(ctx_eleven, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+                datasets: [{
+                    label: 'Total Click',
+                    data: [0, 10, 30, 50, 30, 10, 70, 100],
+                    backgroundColor: gradientBgeleven,
+                    borderColor: '#E328AF',
+                    pointRadius: 0,
+                    tension: 0.1,
+                    borderWidth: 2,
+                    fill: true,
+                    fillColor: '#fff',
+                }]
+            },
+
+            options: {
+                layout: {
+                    padding: {
+                        bottom: -20,
+                        left: -20,
+                    }
+                },
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    x: {
+                        grid: {
+                            display: false,
+                            drawBorder: false,
+                        },
+                        ticks: {
+                            display: false
+                        },
+                        suggestedMax: 4, suggestedMin: 30,
+
+                    },
+
+                    y: {
+                        grid: {
+                            display: false,
+                            drawBorder: false,
+                        },
+                        ticks: {
+                            display: false
+                        },
+                        suggestedMax: 4, suggestedMin: 10,
+                    },
+                },
+
+                plugins: {
+                    tooltip: {
+                        padding: 10,
+                        displayColors: true,
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#000',
+                        titleFont: { weight: 'normal' },
+                        bodyColor: '#2F3032',
+                        cornerRadius: 12,
+                        boxPadding: 3,
+                        usePointStyle: true,
+                        borderWidth: 0,
+                        font: {
+                            size: 14
+                        },
+                        caretSize: 9,
+                        bodySpacing: 100,
+                    },
+                    legend: {
+                        position: 'bottom',
+                        display: false,
+                    },
+                    title: {
+                        display: false,
+                        text: 'Visitor: 2k'
+                    }
+                }
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
