@@ -35,6 +35,10 @@ button {
     font-weight: inherit;
 }
 
+img {
+    max-width: unset;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -430,12 +434,19 @@ footer ul li a {
 
 
 
+.main-top-heading {
+    font-size: 24px;
+    color: #fff;
+}
+.main-wrapper {
+    border-radius: 10px;
+    background-color: #27293D;
+    padding: 5px 15px;
+    padding-bottom: 25px;
+}
 .nav-sections {
-    position: sticky;
-    top: 0;
     width: 100%;
     background-color: white;
-    z-index: 100;
     border-radius: 10px 10px 0px 0px;
     border: 2px solid rgba(0, 0, 0, 0.05);
     padding: 1rem;
@@ -443,11 +454,7 @@ footer ul li a {
 .nav-sections .menu {
     position: relative;
     display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    overscroll-behavior: none;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 100%;
     transform: translateZ(0);
@@ -599,6 +606,12 @@ footer ul li a {
 }
 .bg-pink {
     background: #E328AF !important;
+}
+.bg-deepgreen {
+    background-color: #34515c;
+}
+.bg-grayish-green {
+    background-color: #8ec4d2;
 }
 
 
@@ -841,6 +854,10 @@ footer ul li a {
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
 }
 
+.crancy-table-top {
+    background-color: transparent;
+}
+
 .card {
     border: 2px solid rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -889,7 +906,6 @@ footer ul li a {
 .bg-blue-light {
     background: #E8F3FC !important;
 }
-/* second page ends */
 
 
 
@@ -897,12 +913,6 @@ footer ul li a {
 
 
 
-
-
-
-
-
-/* third page */
 .page-section {
     margin: calc(1rem * 2) 0;
 }
@@ -976,5 +986,55 @@ main#main-content {
 
 .color-red {
     color: #FF6D6F !important;
+}
+
+.color-lime-green {
+    color: #6ba254;
+}
+.color-deep-blue {
+    color: #085277;
+}
+.bg-lime-green {
+    background-color: #6ba254;
+}
+.bg-light-lime-green {
+    background-color: #d4edda;
+}
+
+
+
+
+.button-addon2 {
+    border: 1px solid #009e69;
+}
+
+
+
+.page-link {
+    color: #0aa06e;
+}
+.page-item.active .page-link {
+    background-color: #0aa06e;
+    border-color: #0aa06e;
+}
+/* second page ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/* third page */
+.bg-purple {
+    background-color: #5474e9;
+}
+.color-purple {
+    color: #5885f9;
 }
 /* third page ends */
