@@ -25,10 +25,11 @@
     <div class="overlay"></div>
     <aside>
         <div class="modeToggle">
-            <p>Dark</p>
             <div class="modeSwitch">
                 <input type="checkbox" name="modeInp" id="modeInp">
                 <label for="modeInp"></label>
+                <img src="assets/images/moon.png" alt="" class="modeImg modeImg1">
+                <img src="assets/images/sun.png" alt="" class="modeImg modeImg2">
             </div>
         </div>
         <ul>
@@ -650,7 +651,8 @@
         const isLight = JSON.parse(localStorage.getItem("isLight"))
         const sidebar = document.querySelector("aside")
         const modeSwitch = document.querySelector(".modeSwitch input")
-        const modeText = document.querySelector(".modeToggle p")
+        const modeImg1 = document.querySelector(".modeImg1")
+        const modeImg2 = document.querySelector(".modeImg2")
 
         const body = document.querySelector("body")
         const main = document.querySelector("main")
@@ -659,17 +661,17 @@
         if (isLight) {
             modeSwitch.checked = true
             body.style = `background-color: #ECECEF`
-            modeText.classList.add("light")
-            modeText.innerText = "Light"
             main.classList.add("light")
             sidebar.classList.add("light")
+            modeImg1.style = "opacity: 0"
+            modeImg2.style = "opacity: 1"
         } else {
             body.style = `background-color: #1E1E2F`
-            modeText.classList.remove("light")
-            modeText.innerText = "Dark"
             main.classList.remove("light")
             sidebar.classList.remove("light")
             modeSwitch.checked = false
+            modeImg1.style = "opacity: 1"
+            modeImg2.style = "opacity: 0"
         }
 
 
@@ -677,16 +679,16 @@
             localStorage.setItem("isLight", JSON.stringify(modeSwitch.checked))
             if (modeSwitch.checked) {
                 body.style = `background-color: #ECECEF`
-                modeText.classList.add("light")
-                modeText.innerText = "Light"
                 main.classList.add("light")
                 sidebar.classList.add("light")
+                modeImg1.style = "opacity: 0"
+                modeImg2.style = "opacity: 1"
             } else {
                 body.style = `background-color: #1E1E2F`
-                modeText.classList.remove("light")
-                modeText.innerText = "Dark"
                 main.classList.remove("light")
                 sidebar.classList.remove("light")
+                modeImg1.style = "opacity: 1"
+                modeImg2.style = "opacity: 0"
             }
         })
 

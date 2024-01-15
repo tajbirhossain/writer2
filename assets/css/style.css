@@ -99,7 +99,8 @@ aside .modeToggle .modeSwitch label {
     display: block;
     width: 60px;
     height: 30px;
-    background-color: #477a85;
+    /* background-color: #477a85; */
+    background-color: #fff;
     border-radius: 100px;
     position: relative;
     cursor: pointer;
@@ -111,7 +112,7 @@ aside .modeToggle .modeSwitch label::after {
     content: "";
     width: 25px;
     height: 25px;
-    background-color: #e8f5f7;
+    background-color: #000;
     position: absolute;
     border-radius: 70px;
     top: 2.5px;
@@ -119,14 +120,32 @@ aside .modeToggle .modeSwitch label::after {
     transition: 0.5s;
 }
 
-aside .modeToggle .modeSwitch input:checked+label:after {
+aside .modeToggle .modeSwitch input:checked+label::after {
     left: calc(100% - 3px);
     transform: translateX(-100%);
+    background-color: #fff;
 }
 
 aside .modeToggle .modeSwitch input:checked+label {
-    background-color: #243d42;
+    background-color: #ccc;
 }
+
+aside .modeToggle .modeSwitch .modeImg {
+    width: 18px;
+    position: absolute;
+    top: 69%;
+    left: 7px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+aside .modeToggle .modeSwitch input:checked + label + .modeImg {
+    left: 35px;
+}
+aside .modeToggle .modeSwitch input:checked + label + .modeImg + .modeImg {
+    left: 35px;
+}
+
 
 aside ul li {
     width: 100%;
